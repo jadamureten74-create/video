@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>動画を保存する</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: sans-serif;
+      color: #fff;
+      padding: 20px;
+    }
+    p {
+      margin-bottom: 16px;
+      font-size: 16px;
+      opacity: 0.8;
+      text-align: center;
+    }
+    video {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+    }
+    .hint {
+      margin-top: 16px;
+      font-size: 13px;
+      opacity: 0.5;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p>動画を長押し →「ビデオを保存」で保存できます</p>
+  <video controls playsinline>
+    <source src="https://drive.google.com/uc?export=download&id=1KJBiObWBjpQQ9RnoekPI73ECFT1LsQg5" type="video/mp4">
+  </video>
+  <p class="hint">iPhoneの場合：動画を長押し →「ビデオを保存」<br>Androidの場合：長押し →「動画を保存」</p>
+</body>
+</html>
