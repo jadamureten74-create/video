@@ -17,30 +17,34 @@
       color: #fff;
       padding: 20px;
     }
-    p {
-      margin-bottom: 16px;
-      font-size: 16px;
-      opacity: 0.8;
-      text-align: center;
-    }
     video {
       width: 100%;
       max-width: 500px;
       border-radius: 12px;
     }
+    .btn {
+      margin-top: 20px;
+      background: #1d9bf0;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 14px 40px;
+      font-size: 18px;
+      cursor: pointer;
+    }
     .hint {
-      margin-top: 16px;
-      font-size: 13px;
+      margin-top: 12px;
+      font-size: 12px;
       opacity: 0.5;
       text-align: center;
     }
   </style>
 </head>
 <body>
-  <p>動画を長押し →「ビデオを保存」で保存できます</p>
   <video controls playsinline>
     <source src="ssstwitter.com_1772159368618.mp4" type="video/mp4">
   </video>
-  <p class="hint">iPhoneの場合：動画を長押し →「ビデオを保存」<br>Androidの場合：長押し →「動画を保存」</p>
+  <a class="btn" href="ssstwitter.com_1772159368618.mp4" download="video.mp4">⬇ 動画を保存する</a>
+  <p class="hint">ボタンを押してダウンロード後、「ファイル」アプリから写真に保存できます</p>
 </body>
 </html>
